@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        font-family: var(--zen-family);
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    .divider {
+        width: 10%;
+        text-align: center;
+    }
+
+    p {
+        padding: 1rem;
+    }
+
+    a {
+        background-position-y: -0%;
+        background-image: linear-gradient(180deg, transparent 50%, var(--secondary) 50%) !important;
+        transition: all 0.1s ease;
+        background-size: 2px;
+        background-size: auto 190%;
+        padding: 3px;
+        text-decoration: none;
+        color: inherit;
+    
+        &:hover {
+            background-position-y: 100%;
+            color: var(--tiertary);
+            transition: all 0.1s ease;
+        }
+    }
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 100vh;
+    width: 100vw;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .projectContainer {
+        display: flex;
+        flex: 0 0 34%;
+
+        cursor: pointer;
+
+        flex-direction: column;
+        position: relative;
+
+        height: 30vh;
+        width: 25vw;
+
+        background-color: var(--quator);
+        padding: 1rem;
+        margin: 1rem;
+
+        border-radius: .6rem;
+        border: 1px solid var(--tiertary);
+
+        .stars {
+            position: absolute;
+            
+            .star {
+                transform: translate(1.5rem, -2.3rem);
+            }
+
+            p {
+                position: absolute;
+                transform: translate(-1rem, -1.5rem);
+                color: var(--primary)
+            }
+        }
+
+        .projectInfos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            h2 {
+                text-transform: uppercase;
+            }
+        }
+    
+        .VStack {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .tooltip {
+            display: none;
+
+            position: absolute;
+            transform: translateY(-2.5rem);
+            padding: .5rem;
+            background-color: var(--tiertary);
+            color: var(--primary);
+            border-radius: .5rem;
+        }
+    
+        img {
+            border-radius: 100%;
+            position: absolute;
+            right: 1rem;
+        }
+        
+        img:hover > .tooltip {
+            display: block;
+        }
+
+        .projectCore {
+            margin: 2rem 0 0 0;
+
+            p {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}

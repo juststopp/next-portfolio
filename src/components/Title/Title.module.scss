@@ -1,0 +1,41 @@
+div.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 5rem;
+    line-height: .9;
+    width: 100%;
+
+    div.firstLine {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -15rem;
+    }
+
+    h1.titleTextFirst {
+        font-family: var(--zen-family);
+    }
+
+    h1.titleTextSecond {
+        font-family: var(--hand-family);
+        color: var(--secondary);
+
+        transition: all .5s ease-out;
+
+        &:hover {
+            letter-spacing: .8rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 3rem;
+
+        h1.titleTextFirst {
+            font-family: var(--zen-family);
+            font-weight: 200;
+        }
+    }
+
+}

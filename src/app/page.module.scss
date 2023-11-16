@@ -8,39 +8,6 @@ div.container {
     height: 100vh;
     width: 100vw;
 
-    div.titleContainer {
-        font-size: 5rem;
-        line-height: .9;
-
-        div.firstLine {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin-left: 3rem;
-        }
-
-        h1.titleTextFirst {
-            font-family: var(--zen-family);
-        }
-
-        h1.titleTextSecond {
-            filter: drop-shadow(0px 0px 3px);
-
-            font-family: var(--hand-family);
-            color: var(--secondary);
-        }
-
-        @media screen and (max-width: 768px) {
-            font-size: 3rem;
-
-            h1.titleTextFirst {
-                font-family: var(--zen-family);
-                font-weight: 200;
-            }
-        }
-
-    }
-
     div.mouseContainer {
         display: flex;
         justify-content: center;
