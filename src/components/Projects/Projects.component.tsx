@@ -51,7 +51,7 @@ export default function Projects() {
                 <p>Here is the list of the four most starred projects on my <Link href={'https://github.com/juststopp'}>Github Profile</Link>.</p>
             </div>
             <div className={styles.container}>
-                { projects.map((project) => {
+                { projects.map((project: any) => {
 
                     return (
                         <div className={styles.projectContainer} onClick={() => window.open(project.html_url, '_blank')}>
@@ -85,7 +85,7 @@ export default function Projects() {
                                 <p>{ project.description ?? 'No description has been defined for this project. Feel free to see the github repository to learn more about it.' }</p>
                             </div>
                             <div className={styles.languages}>
-                                { fetchLanguages(project.name).then((languages) => {
+                                { /*fetchLanguages(project.name).then((languages) => {
                                     languages.map((language: {}) => {
                                         return (
                                             <div className={styles.language}>
@@ -93,7 +93,7 @@ export default function Projects() {
                                             </div>
                                         )
                                     })
-                                }) }
+                                })*/ }
                             </div>
                         </div>
                     )
