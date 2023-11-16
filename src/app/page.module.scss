@@ -1,0 +1,64 @@
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+
+    div.titleContainer {
+        font-size: 5rem;
+        line-height: .9;
+
+        div.firstLine {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 3rem;
+        }
+
+        h1.titleTextFirst {
+            font-family: var(--zen-family);
+        }
+
+        h1.titleTextSecond {
+            font-family: var(--hand-family);
+            color: var(--secondary)
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 3rem;
+
+            h1.titleTextFirst {
+                font-family: var(--zen-family);
+                font-weight: 200;
+            }
+        }
+
+    }
+
+    div.mouseContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        position: absolute;
+        bottom: .7rem;
+
+        img.scrollMouse {
+            margin: .8rem;
+        }
+
+        h3 {
+            font-family: var(--hand-family);
+            text-transform: uppercase;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}

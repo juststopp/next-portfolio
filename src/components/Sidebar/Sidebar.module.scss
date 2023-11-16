@@ -1,0 +1,43 @@
+div.sidebarContainer {
+    position: fixed;
+    z-index: 10;
+
+    right: 0;
+    margin: 2vw;
+
+    height: auto;
+    width: 3vw;
+    
+    background-color: var(--tiertary);
+
+    border-radius: 50px;
+    box-shadow: 0 0 50px var(--secondary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: row;
+
+        width: auto;
+        height: 6vh;
+
+        right: auto;
+        bottom: 0;
+    }
+
+    .icon {
+        color: var(--primary);
+        font-size: 2rem;
+
+        margin: 1rem;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.2;
+        }
+    }
+}
