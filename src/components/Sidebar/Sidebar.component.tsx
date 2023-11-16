@@ -29,7 +29,7 @@ export default function Sidebar() {
                 width={25}
                 alt="Github logo"
 
-                onClick={() => window.open('https://github.com/malobgdre', '_blank')}
+                onClick={() => window.open('https://github.com/juststopp', '_blank')}
 
                 className={styles.icon}
             />
