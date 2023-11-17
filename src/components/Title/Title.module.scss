@@ -36,6 +36,14 @@ div.titleContainer {
             font-family: var(--zen-family);
             font-weight: 200;
         }
+
+        div.firstLine {
+            margin-left: -5rem;
+        }
+
+        h1.titleTextSecond:hover {
+            letter-spacing: .15rem;
+        }
     }
 
 }
