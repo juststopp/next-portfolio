@@ -10,16 +10,6 @@ import Link from 'next/link'
 export default function Projects() {
     const [projects, setProjects] = useState([])
 
-    const fetchLanguages = (projectName: string) => {
-        return new Promise((resolve, reject) => {
-            fetch(`https://api.github.com/repos/juststopp/${projectName}/languages`)
-            .then((res) => res.json())
-            .then((data) => {
-                resolve(data)
-            })
-        })
-    }
-
     useEffect(() => {
         fetch('https://api.github.com/users/juststopp/repos')
         .then((res) => res.json())
@@ -85,15 +75,7 @@ export default function Projects() {
                                 <p>{ project.description ?? 'No description has been defined for this project. Feel free to see the github repository to learn more about it.' }</p>
                             </div>
                             <div className={styles.languages}>
-                                { /*fetchLanguages(project.name).then((languages) => {
-                                    languages.map((language: {}) => {
-                                        return (
-                                            <div className={styles.language}>
-                                                <p>{ Object.keys(language)[0] }</p>
-                                            </div>
-                                        )
-                                    })
-                                })*/ }
+                                { project.language }
                             </div>
                         </div>
                     )
