@@ -129,5 +129,30 @@ div.container {
                 -webkit-box-orient: vertical;
             }
         }
+
+        .language {
+            position: absolute;
+            bottom: 1rem;
+
+            padding: .5rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            div.languageDot {
+                height: 1rem;
+                width: 1rem;
+                background-color: var(--secondary);
+                border-radius: 100%
+            }
+
+            border: 2px solid var(--secondary);
+            border-radius: 50px;
+
+            p {
+                margin-left: .5rem;
+            }
+        }
     }
 }

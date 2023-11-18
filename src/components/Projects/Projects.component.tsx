@@ -74,8 +74,9 @@ export default function Projects() {
                             <div className={styles.projectCore}>
                                 <p>{ project.description ?? 'No description has been defined for this project. Feel free to see the github repository to learn more about it.' }</p>
                             </div>
-                            <div className={styles.languages}>
-                                { project.language }
+                            <div className={styles.language}>
+                                <div className={styles.languageDot}></div>
+                                <p>{ project.language }</p>
                             </div>
                         </div>
                     )
