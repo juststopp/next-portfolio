@@ -48,6 +48,13 @@ div.container {
     margin-top: 3rem;
     margin-bottom: 3rem;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        flex-wrap: unset;
+        display: block;
+        transform: translateX(7%);
+    }
+
     .projectContainer {
         display: flex;
         flex: 0 0 34%;
@@ -59,6 +66,14 @@ div.container {
 
         height: 30vh;
         width: 25vw;
+
+
+        @media screen and (max-width: 768px) {
+            flex: 0;
+            height: 30vh;
+            width: 80vw;
+            margin-top: 10vh;
+        }
 
         background-color: var(--quator);
         padding: 1rem;
