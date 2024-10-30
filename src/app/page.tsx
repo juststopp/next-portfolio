@@ -19,8 +19,6 @@ export default function Home() {
                     <h3>scroll</h3>
                 </div>*/}
             </div>
-
-            <Projects />
             
         </>
     )
